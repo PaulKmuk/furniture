@@ -10,6 +10,7 @@ const Shop = () => {
     const clickShopOnline = () => {
         // window.location.href = '/shopping'
         navigate('/shopping')
+        window.scrollTo(0, 0);
     }
 
     const array = [ 
