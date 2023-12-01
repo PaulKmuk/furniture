@@ -36,7 +36,7 @@ const Shop = () => {
                 {array.map(el => (
                     <div 
                         key={el.id}
-                        className='flex flex-col items-center rounded-xl hover:shadow-2xl hover:scale-105 hover:bg-gray-200 pb-10'
+                        className='flex flex-col items-center rounded-xl pb-10'
                     >
                         <div className='flex flex-col my-auto mx-auto'>
                             <img 
