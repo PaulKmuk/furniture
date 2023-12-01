@@ -19,7 +19,7 @@ const Blog = () => {
                         <div>
                             <img className='rounded-3xl group-hover:scale-105' src={el.pathImg}/>
                         </div>
-                        <h3 className='font-bold text-xl p-4'>{el.title}</h3>
+                        <h3 className='font-bold text-md sm:text-lg md:text-xl p-4'>{el.title}</h3>
                         <p className='px-4 text-right'>autor: {el.author}</p>
                     </div>
                 ))}

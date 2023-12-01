@@ -40,10 +40,10 @@ const Contact = () => {
                     <p className='text-4xl'><FaRegEnvelope /></p>
                     <h2 className="fontHero font-bold text-2xl md:text-4xl">Napisz do Nas</h2>
                 </div>
-                <form onSubmit={(event) => handleSubmitMessage(event)} className='flex flex-col gap-4 text-xl'>
-                    <input value={name} onChange={(e) => setName(e.target.value)} type='text' className='px-6 py-2 rounded-3xl' placeholder='Twoje imię'/>
-                    <input value={email} onChange={(e) => setEmail(e.target.value)} type='email' className='px-6 py-2 rounded-3xl' placeholder='Twój adres mailowy'/>
-                    <textarea value={text} onChange={(e) => setText(e.target.value)} className='px-6 py-4 rounded-3xl min-h-[150px]' placeholder='Treść twojej wiadomości ' />
+                <form onSubmit={(event) => handleSubmitMessage(event)} className='flex flex-col gap-4 text-md sm:text-lg md:text-xl'>
+                    <input value={name} onChange={(e) => setName(e.target.value)} type='text' className='px-6 py-2 rounded-lg md:rounded-3xl' placeholder='Twoje imię'/>
+                    <input value={email} onChange={(e) => setEmail(e.target.value)} type='email' className='px-6 py-2 rounded-lg md:rounded-3xl' placeholder='Twój adres mailowy'/>
+                    <textarea value={text} onChange={(e) => setText(e.target.value)} className='px-6 py-4 rounded-lg md:rounded-3xl min-h-[150px]' placeholder='Treść twojej wiadomości ' />
                     <Button type='submit' label='Wyślij'/>
                 </form>
             </div>

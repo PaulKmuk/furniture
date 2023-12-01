@@ -101,14 +101,14 @@ const Navigate = () => {
               onClick={() => clickSection(el.path)}
               href={el.path}
               key={el.name}
-              className="text-4xl font-bold cursor-pointer border-transparent border-b-4 hover:border-yellow-400 tracking-wider"
+              className="text-xl font-black cursor-pointer border-transparent border-b-4 hover:border-yellow-400 tracking-wider"
             >
               {el.name}
             </a>
           ))}
           <div className='w-full h-1 border-t border-gray-400 max-w-[1400px] mx-auto mt-auto'></div>
 
-          <div className='max-w-[1400px] mx-auto p-6 text-white text-sm'>
+          <div className='max-w-[1400px] mx-auto p-6 pb-10 text-white text-sm'>
               <p>Copyright ©2023. All Rights Reserved. — Designed with love by <span className='italic font-semibold px-2'>p.kmuk</span></p>
           </div>
         </div>

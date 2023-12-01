@@ -20,7 +20,7 @@ const AboutAs = () => {
                   {<el.icon />}
                 </p>
               </div>
-              <p className="md:text-xl">{el.description}</p>
+              <p className="text-sm sm:text-lg md:text-xl">{el.description}</p>
             </div>
           ))}
         </div>

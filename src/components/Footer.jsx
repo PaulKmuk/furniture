@@ -31,13 +31,13 @@ const Footer = () => {
                         <h1 className="text-4xl font-bold fontLogo">furniture</h1>
                         <div className="w-4 h-4 bg-yellow-500 rounded-full mb-1 ml-1"></div>
                     </a>
-                    <p>
+                    <p className='text-sm'>
                         Wierzymy, że każde wnętrze ma potencjał, dlatego oferujemy nie tylko wybór gotowych produktów, ale również zapraszamy do skorzystania z naszych usług projektowania wnętrz. Nasz zespół doświadczonych projektantów pomoże Ci stworzyć wyjątkową aranżację.
                     </p>
                     <div className='flex gap-4'>
                         {arraySocialMedia.map(el => (
                             <div 
-                                className='bg-gray-200 text-gray-700 text-xl rounded-full w-10 h-10 flex justify-center items-center cursor-pointer hover:bg-yellow-500'
+                                className='bg-gray-200 text-gray-700 text-md md:text-xl rounded-full w-8 h-8 md:w-10 md:h-10 flex justify-center items-center cursor-pointer hover:bg-yellow-500'
                                 key={el.id}
                             >
                                 {<el.icon />}
@@ -48,8 +48,8 @@ const Footer = () => {
 
 
                 <div className='flex-1'>
-                    <h3 className='fontHero text-2xl'>Nawigacja</h3>
-                    <div className='grid grid-cols-2 py-4 gap-4 text-xl'>
+                    <h3 className='fontHero text-xl'>Nawigacja</h3>
+                    <div className='grid grid-cols-2 py-4 gap-4 text-md md:text-xl'>
                         {navigateLinks.map(el => (
                             <a
                                 key={el.name}
@@ -65,14 +65,14 @@ const Footer = () => {
 
 
                 <div className='flex-1'>
-                    <h3 className='fontHero text-2xl pb-4'>Adres</h3>
-                    <h4 className='text-lg'>ul. Mickiewicza 7</h4>
-                    <h4 className='text-lg pb-4'>00-110 Warszawa</h4>
+                    <h3 className='fontHero text-xl pb-4'>Adres</h3>
+                    <h4 className='text-md'>ul. Mickiewicza 7</h4>
+                    <h4 className='text-md pb-4'>00-110 Warszawa</h4>
 
-                    <p className='text-gray-400 text-lg'>+48 123-456-789</p>
-                    <p className='text-gray-400 text-lg pb-4'>+48 987-654-321</p>
+                    <p className='text-gray-400 text-md'>+48 123-456-789</p>
+                    <p className='text-gray-400 text-md pb-4'>+48 987-654-321</p>
 
-                    <p className='flex items-center gap-2 text-lg'>
+                    <p className='flex items-center gap-2 text-md'>
                         <FaEnvelope />
                         biuro@furniture.com
                     </p>
@@ -84,7 +84,7 @@ const Footer = () => {
 
             <div className='w-full h-1 border-t border-gray-400 max-w-[1400px] mx-auto'></div>
 
-            <div className='max-w-[1400px] mx-auto p-6 text-white'>
+            <div className='max-w-[1400px] mx-auto p-6 text-white text-sm'>
                 <p>Copyright ©2023. All Rights Reserved. — Designed with love by <span className='italic font-semibold px-2'>p.kmuk</span></p>
             </div>
 

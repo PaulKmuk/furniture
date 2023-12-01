@@ -26,13 +26,13 @@ const News = () => {
                 </div>
                 <div className='bg-gray-200'>
                     <div className='max-w-[900px] mx-auto py-10 px-10 flex flex-col'>
-                        <h1 className='text-3xl md:text-5xl fontHero tracking-wider py-10 font-bold'>{news.title}</h1>
-                        <p className='text-xl font-semibold indent-10 py-10'>{news.description[0]}</p>
+                        <h1 className='text-xl sm:text-3xl md:text-5xl fontHero tracking-wider py-10 font-bold'>{news.title}</h1>
+                        <p className='text-md md:text-xl font-semibold indent-10 py-10'>{news.description[0]}</p>
                         <div className='max-w-[900px] mx-auto'>
                             <img className='rounded-3xl' src={news.pathImg}/>
                         </div>
                         {newsUnderImg.map(el => (
-                            <p key={el} className='text-xl indent-10 py-10'>{el}</p>
+                            <p key={el} className='text-md md:text-xl indent-10 py-10'>{el}</p>
                         ))}
                         <p className='ml-auto'>autor: {news.author}</p>
                     </div>

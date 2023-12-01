@@ -65,17 +65,17 @@ const ShoppingCart = () => {
 
     return (
         <div className='fixed top-0 left-0 w-full h-full bg-black/80 backdrop-blur-sm z-50 flex justify-center items-center'>
-            <div className='md:w-[800px] w-full'>
-                <div className=' bg-emerald-800 text-gray-100 flex items-center gap-10 py-10 pl-10 md:pl-20 relative'>
-                    <p className='text-6xl text-yellow-500'><FaShoppingCart /></p>
-                    <h2 className='text-3xl md:text-5xl fontHero tracking-wider'>Twój koszyk zakupów</h2>
-                    <div className='absolute top-0 right-0 text-4xl m-6 cursor-pointer hover:text-yellow-500'>
+            <div className='md:w-[800px] w-full h-screen sm:h-auto'>
+                <div className=' bg-emerald-800 text-gray-100 flex items-center gap-6 md:gap-10 py-10 px-5 md:px-10 md:pl-20 relative'>
+                    <p className='text-3xl sm:text-4xl md:text-6xl text-yellow-500'><FaShoppingCart /></p>
+                    <h2 className='text-2xl sm:text-3xl md:text-5xl fontHero tracking-wider'>Twój koszyk zakupów</h2>
+                    <div className='absolute top-0 right-0 text-2xl md:text-4xl m-6 cursor-pointer hover:text-yellow-500'>
                         <BsXLg onClick={() => dispatch(closeCart())}/>
                     </div>
                 </div>
                 <div className='w-full px-10 md:px-20 pt-10 bg-gray-200 overflow-x-auto max-h-[350px] md:max-h-[400px]'>
 
-                    <table className='w-full min-w-[600px]'>
+                    <table className='w-full min-w-[400px]'>
                         <thead className='md:text-xl'>
                             <tr className='border-b-2 border-gray-600'>
                                 <th className={thClass}>Zdjęcie</th>
@@ -110,7 +110,7 @@ const ShoppingCart = () => {
                         </tbody>
                     </table>
                     {box.length === 0 && (
-                        <div className='w-full bg-gray-100 min-w-[600px]'>
+                        <div className='w-full bg-gray-100 min-w-[400px]'>
                             <p className='w-full text-center md:text-xl py-8'>Twój koszyk jest pusty</p>
                         </div>
                     )}
@@ -119,11 +119,11 @@ const ShoppingCart = () => {
 
                 <div className='md:flex w-full bg-gray-200'>
                     <div className='py-10 px-10 md:px-20 ml-10 mr-auto flex items-center gap-6'>
-                        <h2 className='text-xl md:text-2xl fontHero tracking-wider'>Razem:</h2>
+                        <h2 className='text-md sm:text-xl md:text-2xl fontHero tracking-wider'>Razem:</h2>
                         <h2 className='text-xl md:text-3xl font-black bg-yellow-500 p-1'>{totalPrice} zł</h2>
                     </div>
                     <div className='py-10 px-10 md:px-20 ml-auto mr-10 flex justify-center items-center gap-6'>
-                        <Button click={() => continueShopping()} label='Kontynuuj zakupy'/>
+                        <Button click={() => continueShopping()} label='Kontynuuj'/>
                         <Button click={() => handleBuy()} colorImportant={true} label='Zapłać'/>
                     </div>
                 </div>

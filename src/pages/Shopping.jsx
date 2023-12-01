@@ -48,7 +48,7 @@ const Shopping = () => {
                 <div className='bg-gray-200'>
                     <div className='max-w-[1400px] mx-auto flex flex-col gap-10 py-20'>
                         <h1 className='mx-auto text-3xl md:text-5xl font-bold fontHero'>Produkty</h1>
-                        <ul className='flex gap-6 mx-auto text-xl md:text-2xl font-semibold px-2 flex-wrap'>
+                        <ul className='flex gap-6 mx-auto text-md sm:text-xl md:text-2xl font-semibold px-2 flex-wrap'>
                             {category.map(el => (
                                 <li 
                                     className={activeCategory === el ? activeCategoryClass : categoryClass}
