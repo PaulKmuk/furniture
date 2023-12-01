@@ -1,11 +1,15 @@
 import React from 'react'
 import Button from '../components/Button'
 import { shopElements } from '../data/dataShopping'
+import { useNavigate } from 'react-router-dom'
 
 const Shop = () => {
 
+    const navigate = useNavigate()
+
     const clickShopOnline = () => {
-        window.location.href = '/shopping'
+        // window.location.href = '/shopping'
+        navigate('/shopping')
     }
 
     const array = [ 
